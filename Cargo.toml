@@ -1,0 +1,27 @@
+[package]
+name = "rust_zeromq_examples"
+version = "0.1.0"
+authors = ["Nicholas Dujay <nickdujay@gmail.com>"]
+
+[dependencies.zmq]
+git = "https://github.com/erickt/rust-zmq.git"
+
+[lib]
+name = "zhelpers"
+path = "src/lib.rs"
+
+[[bin]]
+name = "mdpclient"
+path = "src/mdpclient.rs"
+
+[[bin]]
+name = "mdpbroker"
+path = "src/mdpbroker.rs"
+
+[[bin]]
+name = "mdpworker"
+path = "src/mdpworker.rs"
+
+[[bin]]
+name = "titanic"
+path = "src/titanic.rs"

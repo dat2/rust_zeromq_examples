@@ -1,0 +1,47 @@
+[root]
+name = "titanic"
+version = "0.1.0"
+dependencies = [
+ "zmq 0.8.0 (git+https://github.com/erickt/rust-zmq.git)",
+]
+
+[[package]]
+name = "libc"
+version = "0.2.17"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "log"
+version = "0.3.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "pkg-config"
+version = "0.3.8"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "zmq"
+version = "0.8.0"
+source = "git+https://github.com/erickt/rust-zmq.git#fc85ad98de8748d9a6293a13ce735543bdb43da5"
+dependencies = [
+ "libc 0.2.17 (registry+https://github.com/rust-lang/crates.io-index)",
+ "log 0.3.6 (registry+https://github.com/rust-lang/crates.io-index)",
+ "zmq-sys 0.8.0 (git+https://github.com/erickt/rust-zmq.git)",
+]
+
+[[package]]
+name = "zmq-sys"
+version = "0.8.0"
+source = "git+https://github.com/erickt/rust-zmq.git#fc85ad98de8748d9a6293a13ce735543bdb43da5"
+dependencies = [
+ "libc 0.2.17 (registry+https://github.com/rust-lang/crates.io-index)",
+ "pkg-config 0.3.8 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[metadata]
+"checksum libc 0.2.17 (registry+https://github.com/rust-lang/crates.io-index)" = "044d1360593a78f5c8e5e710beccdc24ab71d1f01bc19a29bcacdba22e8475d8"
+"checksum log 0.3.6 (registry+https://github.com/rust-lang/crates.io-index)" = "ab83497bf8bf4ed2a74259c1c802351fcd67a65baa86394b6ba73c36f4838054"
+"checksum pkg-config 0.3.8 (registry+https://github.com/rust-lang/crates.io-index)" = "8cee804ecc7eaf201a4a207241472cc870e825206f6c031e3ee2a72fa425f2fa"
+"checksum zmq 0.8.0 (git+https://github.com/erickt/rust-zmq.git)" = "<none>"
+"checksum zmq-sys 0.8.0 (git+https://github.com/erickt/rust-zmq.git)" = "<none>"
